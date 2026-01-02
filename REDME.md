@@ -1,19 +1,65 @@
-# 🚀 Django Encryption Web App
+#  Django Encryption Web App (DEWA)
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
+![Django](https://img.shields.io/badge/Django-4.2%2B-092E20?style=for-the-badge&logo=django)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+
+> **A hacker-themed cryptographic suite providing secure, channel-based communication via a terminal-style interface.**
+
+##  Overview
+
+This project highlights secure software architecture, custom algorithm design, and full-stack Django development.
+
+---
+## 🛡️ Architecture: 3-Layer Logic
+
+The application processes data through three distinct security layers before storage or transmission.
+
+| Stage | Process Name | Action | Result |
+| :--- | :--- | :--- | :--- |
+| **Layer 1** | **Custom Mapping** | Maps characters to channel-specific integers | `Plain Text` → `Numeric Array` |
+| **Layer 2** | **XOR Calculation** | Applies bitwise XOR with random seed | `Numeric Array` → `Obfuscated Data` |
+| **Layer 3** | **Key Synthesis** | Generates access token & final string | `Obfuscated Data` → `Encrypted Key` |
+
+> **Note:** This multi-layered approach ensures that even if one layer is compromised, the data remains unintelligible without the specific channel context.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 A hacker-themed Django web application that provides secure channel-based encryption and decryption services with a terminal-style interface.
 
-## ✨ Features
+##  Features
 
-- **🔐 User Authentication**: Secure signup, login, and logout system
-- **🧩 Channel System**: Create and join private encrypted channels
-- **🔄 3-Layer Encryption**: Custom character mapping + XOR + secret key generation
-- **🛡️ Security**: Encrypted custom maps, CSRF protection, and access control
-- **🎨 Hacker UI**: Terminal-style interface with Matrix background effects
-- **🌙 Theme Toggle**: Switch between dark hacker theme and light mode
-- **📱 Responsive**: Works on desktop, tablet, and mobile devices
-- **💾 Message History**: Optional encrypted message storage (24hr auto-delete)
+- ** User Authentication**: Secure signup, login, and logout system
+- ** Channel System**: Create and join private encrypted channels
+- ** 3-Layer Encryption**: Custom character mapping + XOR + secret key generation
+- ** Security**: Encrypted custom maps, CSRF protection, and access control
+- ** Hacker UI**: Terminal-style interface with Matrix background effects
+- ** Theme Toggle**: Switch between dark hacker theme and light mode
+- ** Responsive**: Works on desktop, tablet, and mobile devices
+- ** Message History**: Optional encrypted message storage (24hr auto-delete)
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend**: Django 4.2+, Python 3.8+
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
@@ -22,7 +68,7 @@ A hacker-themed Django web application that provides secure channel-based encryp
 - **Security**: Cryptography.fernet, Django signing
 - **Icons**: Font Awesome 6
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -452,5 +498,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 **Built by : Arpit Bhojani **
+
 
 For more information, visit our or contact us at [bhojaniarpit1432@gmail.com] (7383181094).
